@@ -1,0 +1,22 @@
+# TODO 1: Specify the Maven Docker image with a compatible JDK.
+image: maven:3.9.9-eclipse-temurin-17
+
+# TODO 2: Declare build and test stages in the correct order.
+stages:
+  - build
+  - test
+
+# TODO 3: Configure the build job.
+build_job:
+  stage: build
+  script:
+    # TODO 4: Compile the project without running tests.
+    - mvn compile
+
+# TODO 5: Configure the test job.
+test_job:
+  stage: test
+  script:
+    # TODO 6: Execute JUnit tests.
+    - mvn test
+

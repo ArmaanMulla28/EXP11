@@ -1,0 +1,28 @@
+// Jenkins Pipeline starter - complete the TODO sections.
+pipeline {
+    // TODO 1: Select an appropriate agent.
+    agent TODO
+
+    stages {
+        stage('Build') {
+            steps {
+                // TODO 2: Add the build/compile action for the supplied project.
+                TODO
+            }
+        }
+
+        stage('Test') {
+            steps {
+                // TODO 3: Add the test execution action.
+                TODO
+            }
+        }
+
+        stage('Post Build') {
+            steps {
+                // TODO 4: Display a suitable completion message.
+                TODO
+            }
+        }
+    }
+}
